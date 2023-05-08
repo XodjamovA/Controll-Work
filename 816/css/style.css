@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .todo_box {
@@ -19,14 +19,11 @@ body {
 }
 
 .top_box {
-    width: 100%;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: linear-gradient(90deg, #71a5ff 0%, #00ff33 100%);
     padding: 25px;
-    border-radius: 25px;
+    background-color: #3d5a80;
+    border-radius: 4px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, .15);
+    color: #fff;
 }
 
 h1 {
@@ -40,10 +37,10 @@ h1 {
 }
 
 .search {
-    width: 300px;
+    width: 100%;
     padding: 10px;
-    border: 1px solid #000;
-    border-radius: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -52,6 +49,12 @@ h1 {
 .search input {
     border: none;
     outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.search input::placeholder {
+    color: #fff;
 }
 
 .search img {
@@ -65,38 +68,53 @@ h1 {
     color: white;
     padding: 10px;
     font-size: 16px;
-    border-radius: 9px;
+    border-radius: 5px;
     background: none;
     cursor: pointer;
-    transition: .5s ease;
-    height: 55px;
+    transition: .3s ease;
+    /* height: 55px; */
 }
 
-.active_text{
+.active_text {
     background: rgb(255, 247, 233);
 }
+
 .btn:hover {
-    border: 3px solid white;
+    /* transition: .3s ease; */
+    border: 2 solid white;
 }
 
-.active_btn {
-    border: 4px solid white;
-}
+
 
 .tabs {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
     gap: 20px;
-    background: linear-gradient(90deg, #00ff33 0%, #71a5ff 100%);
-
-    border-radius: 25px;
+    padding: 25px;
+    background-color: #3d5a80;
+    border-radius: 4px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, .15);
+    color: #fff;
     padding: 25px;
 }
 
-.headtext {
+.tabs button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.flex {
+    width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.headtext {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid #FBC2EB;
 }
@@ -152,50 +170,55 @@ h1 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.cont{
+
+.cont {
     font-size: 28px;
 }
-h2{
+
+h2 {
     font-size: 36px;
 }
-.cont input{
+
+.cont input {
     width: 26px;
     height: 26px;
 }
-#add, #edit {
+
+#add,
+#edit {
     display: flex;
     align-items: center;
     gap: 20px;
     max-height: 60px;
     flex-wrap: wrap;
 }
-#edit{
+
+#edit {
     min-height: 100px !important;
     margin-top: 30px;
 }
-.image{
+
+.image {
     width: 40px;
     height: 40px;
     border-radius: 100px;
 }
-#edit input{
+
+#edit input {
     padding: 10px;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 5px;
     outline: none;
 }
-#edit button{
+
+#edit button {
     padding: 10px 30px;
     background-color: #A6C1EE;
     color: white;
     border: none;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-}
-.price {
-    position: absolute;
-    transform: translateX(126%);
 }
 
 .checkbox {
@@ -206,16 +229,16 @@ h2{
 .buttons input {
     width: 250px;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 15px;
     border: 1px solid grey;
 }
 
 .buttons button {
     all: unset;
-    border: 2px solid #000;
-    border-radius: 10px;
-    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 13px;
     cursor: pointer;
 }
 
@@ -230,9 +253,11 @@ h2{
     align-items: center;
     backdrop-filter: blur(15px);
 }
-#edit{
+
+#edit {
     display: none;
 }
+
 .modal_w {
     position: relative;
     z-index: 2;
@@ -244,7 +269,9 @@ h2{
     box-shadow: 4px 4px 4px #000;
     border-radius: 20px;
 }
-.izmenit, .soxr{
+
+.izmenit,
+.soxr {
     padding: 10px;
     background-color: #A6C1EE;
     color: white;
@@ -254,9 +281,11 @@ h2{
     position: absolute;
     top: 80%;
 }
-.soxr{
+
+.soxr {
     left: 20%;
 }
+
 .back {
     position: absolute;
     top: 0;
@@ -268,6 +297,7 @@ h2{
 }
 
 .box {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

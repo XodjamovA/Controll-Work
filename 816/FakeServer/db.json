@@ -1,81 +1,109 @@
 {
   "users": [
     {
-      "name": "Бекзод Хамидов",
+      "name": "Сохиб Курбон",
+      "salary": 800,
+      "increase": true,
+      "rise": true,
+      "id": 1
+    },
+    {
+      "name": "Шахзод Хамидов",
+      "salary": 3000,
+      "increase": true,
+      "rise": false,
+      "id": 2
+    },
+    {
+      "name": "Далер Шарифкулов",
       "salary": 5000,
       "increase": true,
+      "rise": false,
+      "id": 3
+    },
+    {
+      "name": "Бекзод Хамидов",
+      "salary": 5000,
+      "increase": false,
       "rise": false,
       "id": 4
     },
     {
       "name": "Алишер Мардиев",
       "salary": 5000,
-      "increase": true,
+      "increase": false,
       "rise": false,
       "id": 5
     },
     {
       "name": "Мухаммад",
       "salary": 5000,
-      "increase": true,
+      "increase": false,
       "rise": false,
       "id": 6
     },
     {
       "name": "Сабина Яковлева",
       "salary": 5000,
-      "increase": true,
+      "increase": false,
       "rise": false,
       "id": 7
     },
     {
       "name": "Руфина",
       "salary": 5000,
-      "increase": true,
+      "increase": false,
       "rise": false,
       "id": 8
     },
     {
       "name": "Хуршида",
       "salary": 5000,
-      "increase": true,
+      "increase": false,
       "rise": false,
       "id": 9
     },
     {
-      "id": 0.30667992390723664,
+      "name": "Дилшод Муртазоев",
+      "salary": 5000,
       "increase": false,
       "rise": false,
-      "name": "Amin",
-      "salary": "5000"
+      "id": 10
     },
     {
-      "id": 0.6904188103738849,
+      "name": "Ориф",
+      "salary": 5000,
       "increase": false,
       "rise": false,
-      "name": "Umed",
-      "salary": "5000"
+      "id": 11
     },
     {
-      "id": 0.9473336030132604,
+      "name": "Улугбек",
+      "salary": 5000,
       "increase": false,
       "rise": false,
-      "name": "Asad",
-      "salary": "5000"
+      "id": 12
     },
     {
-      "id": 0.27941886777765523,
+      "name": "Влад Цой",
+      "salary": 5000,
       "increase": false,
       "rise": false,
-      "name": "Bekzod",
-      "salary": "5000"
+      "id": 13
     },
     {
-      "id": 0.7599965605132559,
+      "name": "Алина",
+      "salary": 5000,
+      "increase": false,
+      "rise": true,
+      "id": 14
+    },
+    {
+      "id": 0.04774492022378474,
       "increase": false,
       "rise": false,
-      "name": "Parviz",
-      "salary": "5000"
+      "name": "Амин",
+      "salary": "100000"
     }
   ]
 }
